@@ -474,7 +474,7 @@ def convert_image():
             conversions.append({
                 'generator': i,
                 'image': f'data:image/png;base64,{img_base64}',
-                'description': self._get_generator_description(conversion_type, i)
+                'description': _get_generator_description(conversion_type, i)
             })
         
         # Prepare response
